@@ -1,0 +1,38 @@
+.App{
+    
+        font-family: 'Lato', sans-serif;
+
+
+
+    /* my own btn */
+        .btn-main {
+        color: #fff;
+        background-color: #7ABA3A;
+        border: none;
+        
+        font-size: 16px;
+        padding: 5px 10px;
+        
+      }
+      .btn-main:hover {
+        color: #fff;
+        background-color: #6a993b;
+        border-color: #6a993b;
+      }
+
+
+      .btn-outline-grey {
+        color: #504f4f;
+        background-color: #fff;
+        border: 1px solid #504f4f;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        
+      }
+      .btn-outline-grey:hover {
+        color: #3d3d3d;
+        background-color: #fff;
+        border: 1px solid #504f4f;
+      }
+}

@@ -1,5 +1,29 @@
 @import '../../variables.scss';
 
 .footer{
-    color: $color-main;
+    
+
+    .links{
+
+        color: $color-black;
+       
+        p{
+            margin-bottom: 0;
+            font-size: small;
+            span{
+                color:$color-main;
+                margin-right: 5px;
+            }
+        }
+
+    }
+
+    .terms{
+        color:$color-dark-grey;
+        p{
+            margin:10px 5px;
+        }
+    }
+        
+    
 }

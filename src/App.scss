@@ -33,6 +33,15 @@
       .btn-outline-grey:hover {
         color: #3d3d3d;
         background-color: #fff;
-        border: 1px solid #504f4f;
+        border: 1px solid #3d3d3d;
       }
+
+      .btn-outline-grey:active {
+             box-shadow: 0 0 0 0.1rem #504f4f;  
+      }
+
+      .btn-main:active{
+        box-shadow: 0 0 0 0.1rem #6a993b;
+      }
+
 }

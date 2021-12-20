@@ -3,7 +3,16 @@
         font-family: 'Lato', sans-serif;
 
 
-
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+       
+       
+        margin:0 20px;
+        .form-control{
+            box-shadow: none;
+        }
     /* my own btn */
         .btn-main {
         color: #fff;
@@ -20,6 +29,22 @@
         border-color: #6a993b;
       }
 
+
+
+      .btn-main-outline {
+        color: #7ABA3A;
+        background-color: #fff;
+        border: 1px solid #7ABA3A;
+        
+        font-size: 16px;
+        padding: 5px 10px;
+        
+      }
+      .btn-main-outline:hover {
+        color: #6a993b;
+        background-color: #fff;
+        border-color: #6a993b;
+      }
 
       .btn-outline-grey {
         color: #504f4f;
@@ -40,7 +65,7 @@
              box-shadow: 0 0 0 0.1rem #504f4f;  
       }
 
-      .btn-main:active{
+      .btn-main:active ,.btn-main-outline:active{
         box-shadow: 0 0 0 0.1rem #6a993b;
       }
 

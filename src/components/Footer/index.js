@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss';
 
-import { AccessAlarm, ThreeDRotation,FacebookRounded, Facebook, Pinterest, Twitter, Instagram ,} from '@material-ui/icons'
+import { Facebook, Pinterest, Twitter, Instagram ,} from '@material-ui/icons'
 export default function Footer() {
     return (
         <div className='footer'>
@@ -48,7 +48,7 @@ export default function Footer() {
                            </h5>
                           
                            
-                           <p><span className='rounded-circle'><Facebook/></span> Facebook</p>
+                           <p><span ><Facebook/></span> Facebook</p>
                            <p><span><Pinterest/> </span>Pinterest</p>
                            <p><span><Twitter/></span>Twitter</p>
                            <p> <span><Instagram/></span>  Instagram</p>

@@ -8,14 +8,23 @@ import {
     Nav,
     NavItem,
      } from 'reactstrap';
+import { Link } from 'react-router-dom';
+
 export default function Header() {
 
+// navbar toggler
 
-let [modal,setModal]=useState(false);
 
-   const toggle = ()=> {
-          setModal(!modal)
+let [nav,setNav]=useState(false);
+
+   const navToggle = ()=> {
+          setNav(!nav)
    }
+
+  
+
+
+
     return (
 
             
@@ -23,15 +32,17 @@ let [modal,setModal]=useState(false);
             <Navbar  light expand="md">
 
 
-          <NavbarBrand href="/">    
+          <NavbarBrand >
+            <Link to="/shopper-marketplace"  >    
             <p className='nav-brand'>
               SH<span>O</span>PPER
               </p>     
+              </Link>
           </NavbarBrand>
 
 
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={modal} navbar>
+          <NavbarToggler onClick={navToggle} />
+          <Collapse isOpen={nav} navbar>
             <Nav className="w-100 d-flex justify-content-around " navbar>
 
 
@@ -46,16 +57,20 @@ let [modal,setModal]=useState(false);
               <div className="right d-flex">
 
                 <NavItem>
-                <button className="btn-outline-grey nav-item">
-                Log in
+                <Link to="/login" style={{ textDecoration: 'none' }}>
+                <button className="btn-outline-grey nav-item"> 
+                Log in                      
               </button>
+              </Link>
 
                 </NavItem>
 
                 <NavItem>
-                <button className="btn-outline-grey nav-item">
-                Sign up
+                <Link to="/signup">
+                <button className="btn-outline-grey nav-item">              
+                sign up
               </button>
+              </Link>
 
                 </NavItem>
               
@@ -72,8 +87,28 @@ let [modal,setModal]=useState(false);
           </Collapse>
         </Navbar>
 
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
             
         </div>
+
+
+
     )
 }
 

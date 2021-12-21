@@ -1,5 +1,7 @@
 .App{
     
+//general style for the entire project
+
         font-family: 'Lato', sans-serif;
 
 
@@ -13,6 +15,12 @@
         .form-control{
             box-shadow: none;
         }
+
+
+
+
+
+
     /* my own btn */
         .btn-main {
         color: #fff;
@@ -68,5 +76,24 @@
       .btn-main:active ,.btn-main-outline:active{
         box-shadow: 0 0 0 0.1rem #6a993b;
       }
+
+
+
+
+
+
+
+
+
+
+
+// to remove blue outline around form control
+      .form-control:focus{
+       
+        box-shadow: none;
+        
+      }
+
+
 
 }

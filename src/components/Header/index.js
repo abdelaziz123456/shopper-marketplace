@@ -21,6 +21,18 @@ let [nav,setNav]=useState(false);
           setNav(!nav)
    }
 
+
+// category toggler
+
+
+   let [category,setCategory]=useState(false);
+
+   const catToggle = ()=> {
+          setNav(!category)
+   }
+
+
+
   
 
 
@@ -29,6 +41,15 @@ let [nav,setNav]=useState(false);
 
             
         <div className='header'>
+
+
+
+
+
+          {/* upper header start  */}
+
+
+
             <Navbar  light expand="md">
 
 
@@ -86,6 +107,56 @@ let [nav,setNav]=useState(false);
             </Nav>
           </Collapse>
         </Navbar>
+
+
+    
+    {/* upper header end  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* category  start  */}
+
+      <Navbar  color="light" expand="md" className='category'>
+
+
+      <NavbarToggler onClick={navToggle} />
+          <Collapse isOpen={nav} navbar>
+            <Nav className="w-100 d-flex justify-content-around " navbar>
+
+          </Nav>
+
+          </Collapse>
+
+          
+
+
+        </Navbar>
+
+
+
+      {/* category  start  */}
+
+
+
+
 
 
 

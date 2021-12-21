@@ -1,0 +1,27 @@
+@import '../../variables.scss';
+
+.product-item{
+
+    width: 300px !important;
+    height: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.335);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        margin-bottom: 0;
+        &:last-child{
+            color: $color-main;
+        }
+    }
+
+    a{
+        color:$color-main
+    }
+
+    .image{
+        
+        border-bottom:  1px solid rgba(128, 128, 128, 0.335);
+    }
+}

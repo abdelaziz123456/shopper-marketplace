@@ -3,6 +3,12 @@
 .footer{
     
 
+
+
+
+
+//main style for footer
+
     .links{
 
         color: $color-black;
@@ -16,7 +22,46 @@
             }
         }
 
+        h5{
+            font-weight: 600;
+        }
+
     }
+
+
+
+
+
+
+    
+
+    // footer icons style
+
+
+    .footer-icons{
+        p{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .icon{
+            text-align: center;
+            color: white;
+            width: 20px;
+            height: 20px;
+            background-color: $color-main;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+
+
+
+
+
+
+
+//terms style
+
 
     .terms{
         color:$color-dark-grey;
@@ -24,6 +69,12 @@
             margin:10px 5px;
         }
     }
+
+
+
+
+
+
         
     
 }

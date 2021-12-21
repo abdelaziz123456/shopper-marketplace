@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss';
 
-import { Facebook, Pinterest, Twitter, Instagram ,} from '@material-ui/icons'
+
 export default function Footer() {
     return (
         <div className='footer'>
@@ -47,11 +47,32 @@ export default function Footer() {
                                Follow Us
                            </h5>
                           
-                           
-                           <p><span ><Facebook/></span> Facebook</p>
-                           <p><span><Pinterest/> </span>Pinterest</p>
-                           <p><span><Twitter/></span>Twitter</p>
-                           <p> <span><Instagram/></span>  Instagram</p>
+                           <div className="d-flex footer-icons my-2">
+                               <p className='icon'><i className="fa fa-facebook" aria-hidden="true"></i>
+                             </p>
+                             <p>Facebook</p>
+                           </div>
+
+
+                           <div className="d-flex footer-icons my-2">
+                               <p className='icon'><i className="fa fa-pinterest-p" aria-hidden="true"></i>
+                             </p>
+                             <p>Facebook</p>
+                           </div>
+
+                           <div className="d-flex footer-icons my-2">
+                               <p className='icon'><i className="fa fa-twitter" aria-hidden="true"></i>
+                             </p>
+                             <p>Facebook</p>
+                           </div>
+
+
+                           <div className="d-flex footer-icons my-2">
+                               <p className='icon'><i className="fa fa-instagram" aria-hidden="true"></i>
+                             </p>
+                             <p>Facebook</p>
+                           </div>
+                          
                 </div>
 
                 <hr />
@@ -61,6 +82,7 @@ export default function Footer() {
 
 
 
+            
 
 
 

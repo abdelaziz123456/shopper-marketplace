@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './index.scss';
 
 
@@ -45,16 +46,19 @@ export default function ProductItem(props) {
                 <div className="left">
                     <p> {props.name}</p>
            
-                   <p>seller is {props.seller}</p>
+                   <p>sold by {props.seller}</p>
                     
                    <p>$ {props.price}</p>
+
+
+
 
 
                 </div>
 
                 <div className="right d-flex align-items-center">
-                    <a href="#"> <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
-                    </a>
+                    <Link to={'/product-details/'+props.id}> <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+                    </Link>
                 </div>
 
                     

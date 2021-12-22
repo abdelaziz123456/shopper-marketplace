@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.product-details{
+    span{
+        color:$color-main
+}
+    
+    .details{
+        
+    }
+    .checked{
+        color: orange;
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            display: inline-block;
+            max-width: 400px !important;
+        }
+        
+    }
+}

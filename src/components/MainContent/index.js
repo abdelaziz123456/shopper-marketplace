@@ -3,17 +3,55 @@ import { items } from '../../Data';
 
 import ProductItem from '../ProductItem';
 
-export default function MainContent() {
-    return (
-        <div className='maincontent '>
-            
-            <div className="products row justify-content-around">
+export default function MainContent(props) {
+    let category=props.category;
+        
+    let products=items;
 
-            {items.map((item)=>
-            <ProductItem  name={item.name} price={item.price} seller={item.seller} image={item.image}/>)}
+    switch (category){
+        case 'furniture':
+        products=items.filter(item=>item.category==='furniture') ;
+        break;
 
+        case 'shoe':
+        products=items.filter(item=>item.category==='shoes');
+        break;
+
+        case 'clothes':
+        products=items.filter(item=>item.category==='clothes');
+        break;
+
+
+        case 'electronics':
+        products=items.filter(item=>item.category==='electronics');
+        break;
+
+
+
+        default:
+        products=items;
+        break;
+
+    }
+
+  
+    
+
+        return (
+            <div className='maincontent '>
+                
+                <div className="products row justify-content-around">
+    
+                {
+                
+                products.map((item)=>
+                <ProductItem  name={item.name} price={item.price} seller={item.seller} image={item.image} id={item.id}/>)}
+    
+                </div>
+                
             </div>
-            
-        </div>
-    )
+        )
+
+    
+    
 }

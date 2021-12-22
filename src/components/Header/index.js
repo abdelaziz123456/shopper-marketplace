@@ -10,9 +10,10 @@ import {
      } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-export default function Header() {
+export default function Header(props) {
 
-// navbar toggler
+
+
 
 
 let [nav,setNav]=useState(false);
@@ -25,11 +26,16 @@ let [nav,setNav]=useState(false);
 // category toggler
 
 
-   let [category,setCategory]=useState(false);
+   let [catNav,setCatNav]=useState(false);
 
    const catToggle = ()=> {
-          setNav(!category)
+    setCatNav(!catNav)
    }
+
+
+
+
+
 
 
 
@@ -134,12 +140,56 @@ let [nav,setNav]=useState(false);
 
       {/* category  start  */}
 
-      <Navbar  color="light" expand="md" className='category'>
+      <Navbar  light expand="md" className='category mb-3'>
 
 
-      <NavbarToggler onClick={navToggle} />
-          <Collapse isOpen={nav} navbar>
+      <NavbarToggler onClick={catToggle}  />
+          <Collapse isOpen={catNav} navbar>
             <Nav className="w-100 d-flex justify-content-around " navbar>
+
+
+
+            <NavItem className='nav-item'>
+                <Link to='/shopper-marketplace'  onClick={()=>{props.setCategory('all')}}>
+                  All items
+                </Link>
+            </NavItem>
+
+
+            
+
+
+            <NavItem className='nav-item'>
+            <Link to='/shopper-marketplace' onClick={()=>{props.setCategory('clothes')}}>
+                  clothes
+                </Link>
+            </NavItem>
+
+
+            <NavItem className='nav-item'>
+            <Link to='/shopper-marketplace' onClick={()=>{props.setCategory('shoe')}}>
+                  Shoes
+                </Link>
+            </NavItem>
+
+
+
+
+            <NavItem className='nav-item'>
+            <Link to='/shopper-marketplace' onClick={()=>{props.setCategory('electronics')}}>
+                  Electronics
+                </Link>
+            </NavItem>
+
+
+            <NavItem className='nav-item'>
+            <Link to='/shopper-marketplace' onClick={()=>{props.setCategory('furniture')}}>
+                  Furniture
+                </Link>
+            </NavItem>
+
+
+
 
           </Nav>
 
@@ -152,7 +202,7 @@ let [nav,setNav]=useState(false);
 
 
 
-      {/* category  start  */}
+      {/* category  end  */}
 
 
 
@@ -187,8 +237,3 @@ let [nav,setNav]=useState(false);
 
 
 
-{/* <NavbarBrand href="/">    
-            <p className='nav-brand'>
-              SH<span>O</span>PPER
-              </p>     
-          </NavbarBrand> */}

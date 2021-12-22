@@ -47,6 +47,17 @@
 
 
     .category{
-        background-color: #F4F4F4 !important;
+        background-color: $color-main !important;
+        color: white;
+        .nav-item{
+            margin:5px;
+            &:hover{
+                text-decoration: underline;
+                
+                
+
+            }
+        }
     }
+    
 }

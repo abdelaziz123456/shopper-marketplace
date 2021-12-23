@@ -1,21 +1,58 @@
 import React, { useState } from 'react';
-import { Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
+
 import './index.scss';
-import {  useParams } from 'react-router-dom';
+import {  useNavigate, useParams } from 'react-router-dom';
 import {items} from '../../Data';
+import Description from '../Description';
 
-export default function ProductDetails() {
+export default function ProductDetails(props) {
 
+//useHistory hook to redirect the user to favourite page
+
+let navigate=useNavigate();
+
+
+//router hook to get specific product by id
 
 let params=useParams();
 
 let product=items.find(item=>item.id==params.id) ;
 
 
+let favList=props.favList;
+let setFavList=props.setFavList;
+const favouriteHandler=()=>{
+  setFavList([...favList,{...product}]);
+  navigate('/favitems')
+}
 
-//tabs hooks
 
-const [activeTab, setActiveTab] = useState('1');
+
+
+// item number state
+
+const [num,setNum]=useState(1);
+
+
+// here I make max num of items i can add to cart == availableNumber
+
+const increaseItem=()=>{
+  if(num<Number(product.availableNumber)){
+    setNum(num+1);
+  }
+    
+}
+
+
+// min num of items can be added is 1 
+const decreaseItem=()=>{
+  if(num>1){
+    setNum(num-1);
+  }
+}
+
+
+
 
 
     
@@ -58,13 +95,12 @@ const [activeTab, setActiveTab] = useState('1');
 
     {/* item details start */}
 
-    <div className="row">
+    <div className="row item-details">
 
 
         <div className="img col-12 col-md-6 p-3">
            <img src={product.image} alt="" className='img-fluid'/>
-
-            
+      
         </div>
 
 
@@ -93,14 +129,25 @@ const [activeTab, setActiveTab] = useState('1');
                     Add To Cart
                 </button>
 
-                
+                <div className='item-num d-flex align-items-center'>
+                  <button className="btn-main" onClick={increaseItem}>
+                    +
+                  </button>
 
 
+                  <p className='mb-0 mx-3'>{num}</p>
+
+
+                  <button className="btn-main" onClick={decreaseItem}>
+                    -
+                  </button>
+                </div>
+                <button className="btn-main my-3" onClick={favouriteHandler}>
+                <i className="fa fa-heart" ></i>
+                </button>
          </div>
         </div>
     </div>
-
-
 
     {/* item details end */}
 
@@ -108,97 +155,14 @@ const [activeTab, setActiveTab] = useState('1');
 
 
 
+
     {/* desc & reviews start */}
 
-    <div>
-      <Nav tabs className='d-flex justify-content-center'>
-        <NavItem>
-          <NavLink className={activeTab == '1' ? 'active' : ''} onClick={() => setActiveTab('1')}>
-            Descripion
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink className={activeTab == '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
-            Reviews
-          </NavLink>
-        </NavItem>
-      </Nav>
-
-
-
-      <TabContent activeTab={activeTab}>
-        <TabPane tabId="1">
-
-            <p className='p-3'>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
-
-            <p>
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-            </p>
-
-            <p>
-         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-        </p>
-
-        <p>
-         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-        </p>
-        
-        </TabPane>
-        <TabPane tabId="2">
-          <div className='p-3 '>
-
-              <p>
-              reviewed by <span>adrian32</span> 
-              </p>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-
-                <br />
-
-                <p>
-              reviewed by <span>sofia43</span> 
-              </p>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-
-
-              <br />
-
-                <p>
-              reviewed by <span>sara45</span> 
-              </p>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-
-
-
-          
-          </div>
-          
-
-
-        </TabPane>
-      </TabContent>
-    </div>
-
+      <Description/>
+    
     {/* desc & reviews end */}
 
-
-
-
-
-
-
-
-
-           
-
-           <hr />
+          <hr />
         </div>   
         
         

@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import './App.scss';
+import FavItems from "./components/FavItems";
 import Footer from './components/Footer';
 import Header from './components/Header';
 import LogIn from './components/LogIn';
@@ -15,11 +16,23 @@ import SignUp from "./components/SignUp";
 
 
 function App() {
+
+  //Login setter
+
+  const [login,setLogin]=useState(true);
+
   
 
   // category setter
 
-  const [category,setCategory]=useState('all')
+  const [category,setCategory]=useState('all');
+
+
+
+  //add favourite item 
+
+  const [favList,setFavList]=useState([])
+
 
 
   return (
@@ -28,7 +41,7 @@ function App() {
       <div className="App">
 
       
-      <Header  setCategory={setCategory}/>
+      <Header  setCategory={setCategory} login={login} setLogin={setLogin}/>
       
 
 
@@ -48,7 +61,10 @@ function App() {
      <Route path="/signup" element={<SignUp/>}  />
 
 
-     <Route path='/product-details/:id'  element={<ProductDetails/>} />
+     <Route path='/product-details/:id'  element={<ProductDetails login={login}    setFavList={setFavList} favList={favList}/>}  />
+
+
+     <Route path="/favitems" element={<FavItems favList={favList} setFavList={setFavList}/>}  />
 
       
       

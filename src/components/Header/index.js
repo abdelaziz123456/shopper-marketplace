@@ -7,12 +7,15 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
+     Modal, 
+      ModalBody,
+      Button
      } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Header(props) {
 
-
+let navigate=useNavigate();
 
 
 
@@ -35,9 +38,20 @@ let [nav,setNav]=useState(false);
 
 
 
+   const [modal, setModal] = React.useState(false);
+  
+   // Toggle for Modal
+   const toggle = () => setModal(!modal);
 
 
 
+   //logout 
+
+   const logout=()=>{
+     props.setLogin(false);
+     setModal(!modal);
+     navigate('/shopper-marketplace')
+   }
 
   
 
@@ -83,23 +97,80 @@ let [nav,setNav]=useState(false);
 
               <div className="right d-flex">
 
+
+                {props.login ?
+
+
+
+                // logged case
+                
+                <> 
                 <NavItem>
-                <Link to="/login" style={{ textDecoration: 'none' }}>
-                <button className="btn-outline-grey nav-item"> 
-                Log in                      
-              </button>
-              </Link>
+                    <Link to="/favitems" style={{ textDecoration: 'none' }}>
+                    <button className="btn-main nav-item"> 
+                    <i className="fa fa-heart" ></i>
+                     
+                  </button>
+                  </Link>
+
+                  <Link to="/login" style={{ textDecoration: 'none' }} >
+                    <button className="btn-main nav-item"> 
+                    <i class="fa fa-shopping-cart" ></i>
+
+                     
+                  </button>
+                  </Link>
+
+
+
+                  
+                    <button className="btn-main nav-item" onClick={toggle}> 
+                    <i class="fa fa-sign-out" ></i>
+
+
+            
+
+
+                     
+                  </button>
+                  
+
+                </NavItem>
+                
+
+                </>
+                
+              
+              :  
+
+
+              
+                // unlogged case
+
+              <>
+              <NavItem>
+                    <Link to="/login" style={{ textDecoration: 'none' }}>
+                    <button className="btn-outline-grey nav-item"> 
+                    Log in                      
+                  </button>
+                  </Link>
 
                 </NavItem>
 
                 <NavItem>
-                <Link to="/signup">
-                <button className="btn-outline-grey nav-item">              
-                sign up
-              </button>
-              </Link>
+                    <Link to="/signup">
+                    <button className="btn-outline-grey nav-item">              
+                    sign up
+                  </button>
+                  </Link>
 
                 </NavItem>
+
+                </>
+              
+              }
+
+                
               
               
 
@@ -212,6 +283,40 @@ let [nav,setNav]=useState(false);
 
 
 
+              {/* logout modal start  */}
+
+        <Modal isOpen={modal}
+                toggle={toggle} centered
+                >
+                <ModalBody className='m-4'>
+                  <h5> Are you sure you want to log out ?</h5>
+                    
+
+                    
+                    <div className='d-flex justify-content-between mt-5'>
+
+
+                      <Button onClick={logout
+                    } >
+                        Confirm
+                      </Button>
+
+
+                      <Button onClick={toggle}>
+                        Cancel
+                      </Button>
+                    </div>
+                </ModalBody>
+
+            </Modal>
+
+    {/* logout modal end  */}
+
+
+
+
+
+    
 
 
       

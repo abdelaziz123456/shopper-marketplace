@@ -74,7 +74,7 @@ let [nav,setNav]=useState(false);
 
 
           <NavbarBrand >
-            <Link to="/shopper-marketplace"  >    
+            <Link to="/shopper-marketplace" onClick={()=>{props.setCategory('all')}}  >    
             <p className='nav-brand'>
               SH<span>O</span>PPER
               </p>     
@@ -113,7 +113,7 @@ let [nav,setNav]=useState(false);
                   </button>
                   </Link>
 
-                  <Link to="/login" style={{ textDecoration: 'none' }} >
+                  <Link to="/cart" style={{ textDecoration: 'none' }} >
                     <button className="btn-main nav-item"> 
                     <i class="fa fa-shopping-cart" ></i>
 

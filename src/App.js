@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import './App.scss';
+import Cart from "./components/Cart";
 import FavItems from "./components/FavItems";
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -19,7 +20,7 @@ function App() {
 
   //Login setter
 
-  const [login,setLogin]=useState(true);
+  const [login,setLogin]=useState(false);
 
   
 
@@ -56,7 +57,7 @@ function App() {
 
      <Route path="/shopper-marketplace" element={<MainContent category={category}/>}  />
 
-     <Route path="/login" element={<LogIn/>}  />
+     <Route path="/login" element={<LogIn  setLogin={setLogin}/>}  />
 
      <Route path="/signup" element={<SignUp/>}  />
 
@@ -66,7 +67,7 @@ function App() {
 
      <Route path="/favitems" element={<FavItems favList={favList} setFavList={setFavList}/>}  />
 
-      
+      <Route path='/cart' element={<Cart  />} />
       
       
      </Routes>

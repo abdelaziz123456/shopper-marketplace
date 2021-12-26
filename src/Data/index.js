@@ -3,7 +3,7 @@ export const items=[
 {
     id:1,
     name:'black track shoe',
-    price:230.15,
+    price:230,
     availableNumber:9,
     category:'shoes',
     seller:'Nike',
@@ -13,7 +13,7 @@ export const items=[
 {
     id:2,
     name:'Track Shoe',
-    price:420.23,
+    price:420,
     availableNumber:4,
     category:'shoes',
     seller:'Nike',
@@ -23,7 +23,7 @@ export const items=[
 {
     id:3,
     name:'Track Shoe',
-    price:390.33,
+    price:390,
     availableNumber:5,
     category:'shoes',
     seller:'Silhouette',
@@ -33,7 +33,7 @@ export const items=[
 {
     id:4,
     name:'Black Shoe',
-    price:2300.32,
+    price:2300,
     availableNumber:8,
     category:'shoes',
     seller:'Gucci',
@@ -43,7 +43,7 @@ export const items=[
 {
     id:5,
     name:'Brown shoes',
-    price:140.43,
+    price:140,
     availableNumber:14,
     category:'shoes',
     seller:'Gucci',
@@ -53,7 +53,7 @@ export const items=[
 {
     id:6,
     name:'black track shoe',
-    price:546.66,
+    price:546,
     availableNumber:12,
     category:'shoes',
     seller:'Nike',
@@ -63,7 +63,7 @@ export const items=[
 {
     id:7,
     name:'white t-shirt',
-    price:884.54,
+    price:884,
     availableNumber:5,
     category:'clothes',
     seller:'scott',
@@ -73,7 +73,7 @@ export const items=[
 {
     id:8,
     name:'blue t-shirt',
-    price:765.54,
+    price:765,
     availableNumber:3,
     category:'clothes',
     seller:'scott',
@@ -83,7 +83,7 @@ export const items=[
 {
     id:9,
     name:'black t-shirt',
-    price:666.5,
+    price:666,
     availableNumber:20,
     category:'clothes',
     seller:'scott',
@@ -93,7 +93,7 @@ export const items=[
 {
     id:10,
     name:'jeans',
-    price:657.54,
+    price:657,
     availableNumber:13,
     category:'clothes',
     seller:'sunny',
@@ -103,7 +103,7 @@ export const items=[
 {
     id:11,
     name:'blue shirt',
-    price:323.44,
+    price:323,
     availableNumber:4,
     category:'clothes',
     seller:'sunny',
@@ -113,7 +113,7 @@ export const items=[
 {
     id:12,
     name:'squared shirt',
-    price:656.54,
+    price:656,
     availableNumber:7,
     category:'clothes',
     seller:'sunny',
@@ -123,7 +123,7 @@ export const items=[
 {
     id:13,
     name:'gaming computer',
-    price:1200.43,
+    price:1200,
     availableNumber:4,
     category:'electronics',
     seller:'MSI',
@@ -133,7 +133,7 @@ export const items=[
 {
     id:14,
     name:'apple computer',
-    price:545.54,
+    price:545,
     availableNumber:6,
     category:'electronics',
     seller:'Apple',
@@ -143,7 +143,7 @@ export const items=[
 {
     id:15,
     name:'samsung mobile',
-    price:997.65,
+    price:997,
     availableNumber:11,
     category:'electronics',
     seller:'samsung',
@@ -153,7 +153,7 @@ export const items=[
 {
     id:16,
     name:'iphone 7',
-    price:657.54,
+    price:657,
     availableNumber:15,
     category:'electronics',
     seller:'apple',
@@ -163,7 +163,7 @@ export const items=[
 {
     id:17,
     name:'apple laptop',
-    price:765.65,
+    price:765,
     availableNumber:12,
     category:'electronics',
     seller:'apple',
@@ -173,7 +173,7 @@ export const items=[
 {
     id:18,
     name:'wireless headphones',
-    price:656.65,
+    price:656,
     availableNumber:3,
     category:'electronics',
     seller:'logitec',
@@ -183,7 +183,7 @@ export const items=[
 {
     id:19,
     name:'brown sofa',
-    price:240.43,
+    price:240,
     availableNumber:22,
     category:'furniture',
     seller:'ikea',
@@ -193,7 +193,7 @@ export const items=[
 {
     id:20,
     name:'red sofa',
-    price:439.43,
+    price:439,
     availableNumber:14,
     category:'furniture',
     seller:'ikea',
@@ -203,7 +203,7 @@ export const items=[
 {
     id:21,
     name:'metal table',
-    price:543.43,
+    price:543,
     availableNumber:4,
     category:'furniture',
     seller:'ikea',
@@ -213,7 +213,7 @@ export const items=[
 {
     id:22,
     name:'wooden table',
-    price:1300.32,
+    price:1300,
     availableNumber:9,
     category:'furniture',
     seller:'ikea',
@@ -223,7 +223,7 @@ export const items=[
 {
     id:23,
     name:'arm chair',
-    price:545.43,
+    price:545,
     availableNumber:10,
     category:'furniture',
     seller:'ikea',
@@ -233,7 +233,7 @@ export const items=[
 {
     id:24,
     name:'office chair',
-    price:543.43,
+    price:543,
     availableNumber:11,
     category:'furniture',
     seller:'ikea',
@@ -243,7 +243,7 @@ export const items=[
 {
     id:25,
     name:'Dock shoe',
-    price:230.15,
+    price:230,
     availableNumber:12,
     category:'shoes',
     seller:'Nike',
@@ -253,7 +253,7 @@ export const items=[
 {
     id:26,
     name:'Addidas shoe',
-    price:420.23,
+    price:420,
     availableNumber:4,
     category:'shoes',
     seller:'Nike',
@@ -263,7 +263,7 @@ export const items=[
 {
     id:27,
     name:'Track Shoe',
-    price:390.33,
+    price:390,
     availableNumber:5,
     category:'shoes',
     seller:'Silhouette',
@@ -273,7 +273,7 @@ export const items=[
 {
     id:28,
     name:'Black Shoe',
-    price:2300.32,
+    price:2300,
     availableNumber:6,
     category:'shoes',
     seller:'Gucci',
@@ -283,7 +283,7 @@ export const items=[
 {
     id:29,
     name:'Brown shoes',
-    price:140.43,
+    price:140,
     availableNumber:7,
     category:'shoes',
     seller:'Gucci',
@@ -293,7 +293,7 @@ export const items=[
 {
     id:30,
     name:'black track shoe',
-    price:546.66,
+    price:546,
     availableNumber:8,
     category:'shoes',
     seller:'Nike',
@@ -303,7 +303,7 @@ export const items=[
 {
     id:31,
     name:'white t-shirt',
-    price:884.54,
+    price:884,
     availableNumber:9,
     category:'clothes',
     seller:'scott',
@@ -313,7 +313,7 @@ export const items=[
 {
     id:32,
     name:'blue t-shirt',
-    price:765.54,
+    price:765,
     availableNumber:10,
     category:'clothes',
     seller:'scott',
@@ -323,7 +323,7 @@ export const items=[
 {
     id:33,
     name:'black t-shirt',
-    price:666.5,
+    price:666,
     availableNumber:11,
     category:'clothes',
     seller:'scott',
@@ -333,7 +333,7 @@ export const items=[
 {
     id:34,
     name:'jeans',
-    price:657.54,
+    price:657,
     availableNumber:12,
     category:'clothes',
     seller:'sunny',
@@ -343,7 +343,7 @@ export const items=[
 {
     id:35,
     name:'blue shirt',
-    price:323.44,
+    price:323,
     availableNumber:13,
     category:'clothes',
     seller:'sunny',
@@ -353,7 +353,7 @@ export const items=[
 {
     id:36,
     name:'squared shirt',
-    price:656.54,
+    price:656,
     availableNumber:14,
     category:'clothes',
     seller:'sunny',
@@ -363,7 +363,7 @@ export const items=[
 {
     id:37,
     name:'gaming computer',
-    price:1200.43,
+    price:1200,
     availableNumber:15,
     category:'electronics',
     seller:'MSI',
@@ -373,7 +373,7 @@ export const items=[
 {
     id:38,
     name:'apple computer',
-    price:545.54,
+    price:545,
     availableNumber:16,
     category:'electronics',
     seller:'Apple',
@@ -383,7 +383,7 @@ export const items=[
 {
     id:39,
     name:'samsung mobile',
-    price:997.65,
+    price:997,
     availableNumber:4,
     category:'electronics',
     seller:'samsung',
@@ -393,7 +393,7 @@ export const items=[
 {
     id:40,
     name:'iphone 7',
-    price:657.54,
+    price:657,
     availableNumber:6,
     category:'electronics',
     seller:'apple',
@@ -403,7 +403,7 @@ export const items=[
 {
     id:41,
     name:'apple laptop',
-    price:765.65,
+    price:765,
     availableNumber:7,
     category:'electronics',
     seller:'apple',
@@ -413,7 +413,7 @@ export const items=[
 {
     id:42,
     name:'wireless headphones',
-    price:656.65,
+    price:656,
     availableNumber:8,
     category:'electronics',
     seller:'logitec',
@@ -423,7 +423,7 @@ export const items=[
 {
     id:43,
     name:'brown sofa',
-    price:543.43,
+    price:543,
     availableNumber:9,
     category:'furniture',
     seller:'ikea',
@@ -433,7 +433,7 @@ export const items=[
 {
     id:44,
     name:'red sofa',
-    price:654.54,
+    price:654,
     availableNumber:10,
     category:'furniture',
     seller:'ikea',
@@ -443,7 +443,7 @@ export const items=[
 {
     id:45,
     name:'metal table',
-    price:545.65,
+    price:545,
     availableNumber:11,
     category:'furniture',
     seller:'ikea',
@@ -463,7 +463,7 @@ export const items=[
 {
     id:47,
     name:'arm chair',
-    price:323.32,
+    price:323,
     availableNumber:13,
     category:'furniture',
     seller:'ikea',
@@ -473,7 +473,7 @@ export const items=[
 {
     id:48,
     name:'office chair',
-    price:434.54,
+    price:434,
     availableNumber:14,
     category:'furniture',
     seller:'ikea',

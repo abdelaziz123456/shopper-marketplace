@@ -1,10 +1,50 @@
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import React from 'react'
 import './index.scss';
 
-export default function LogIn() {
+import {
+    
+     Modal, 
+      ModalBody,
+      Button
+     } from 'reactstrap';
+
+export default function LogIn(props) {
+
+
+
+    // redirect hook
+
+    const navigate=useNavigate();
+    
+
+
+    // modal handler
+    
+    const [modal, setModal] = React.useState(false);
+  
+   const toggle = () => setModal(!modal);
+
+
+    // login hamdler
+
+    const  loginHandler=(e)=>{
+        e.preventDefault();
+        props.setLogin(true);
+        toggle();
+    }
+
+
+    //redirect handler
+
+    const redirectHandler=()=>{
+        toggle();
+        navigate('/shopper-marketplace')
+
+    }
+
     return (
-        <div className='form '>
+        <form className='form ' onSubmit={loginHandler}>
                <div className="main-div ">
 
 
@@ -14,11 +54,15 @@ export default function LogIn() {
 
 
 
+
+
+
+
                     {/* Login section start */}
 
-                   <input className='form-control my-2  ' type="text" placeholder='Username/Email ' />
+                   <input className='form-control my-2  ' type="email" placeholder='Email '  required />
 
-                   <input className='form-control my-2 ' type="password" placeholder='Password' />
+                   <input className='form-control my-2 ' type="password" placeholder='Password' required />
 
 
                    <div className="d-flex justify-content-between w-100 my-3">
@@ -32,7 +76,7 @@ export default function LogIn() {
 
                    </div>
 
-                   <button className="btn-main px-3 py-2 mb-3">
+                   <button className="btn-main px-3 py-2 mb-3" type='submit'>
                        Log in
                    </button>
 
@@ -111,7 +155,43 @@ export default function LogIn() {
                {/* register section end */}
 
 
+
+
+
+
+                  {/* logout modal start  */}
+
+        <Modal isOpen={modal}
+                toggle={toggle} centered
+                >
+                <ModalBody className='m-4'>
+                  <h5 className='text-success text-center'> Logged in successfully</h5>
+                    
+
+                    
+                    <div className='d-flex justify-content-center mt-5'>
+
+
+                      
+
+
+                      <Button onClick={redirectHandler}>
+                        Ok
+                      </Button>
+                    </div>
+                </ModalBody>
+
+            </Modal>
+
+    {/* logout modal end  */}
+
+
+
+
+
+
+
                </div>
-        </div>
+        </form>
     )
 }

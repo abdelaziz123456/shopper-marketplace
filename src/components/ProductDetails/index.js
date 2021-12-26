@@ -5,7 +5,21 @@ import {  useNavigate, useParams } from 'react-router-dom';
 import {items} from '../../Data';
 import Description from '../Description';
 
+import {add_item} from '../../Actions'
+
+import {
+   Modal, 
+    ModalBody,
+    Button
+   } from 'reactstrap';
+
+   import { useDispatch ,useSelector} from 'react-redux';
+
+
 export default function ProductDetails(props) {
+
+
+
 
 //useHistory hook to redirect the user to favourite page
 
@@ -19,14 +33,65 @@ let params=useParams();
 let product=items.find(item=>item.id==params.id) ;
 
 
+
+//add item to cart
+const dispatch = useDispatch();
+const cartItems=useSelector(state=>state)
+
+const addToCart=()=>{
+  
+   dispatch(add_item({id:cartItems.length+1,name:product.name,number:num,price:product.price*num}));
+   
+   navigate('/cart');
+  
+}
+
+
+
+
+// add item to favourite list
+
 let favList=props.favList;
 let setFavList=props.setFavList;
 const favouriteHandler=()=>{
+
   setFavList([...favList,{...product}]);
   navigate('/favitems')
 }
 
 
+
+//modal 
+
+const [modal, setModal] = React.useState(false);
+  
+const toggle = () => setModal(!modal);
+
+
+
+
+// ask user to login first before add to favourite
+
+const loginToFav=()=>{
+  if(props.login){
+
+    favouriteHandler()
+
+  }else{
+    toggle();
+  }
+}
+
+
+// ask user to login first before add to cart
+
+const loginToCart=()=>{
+  if(props.login){
+    addToCart()
+  }else{
+    toggle()
+  } 
+}
 
 
 // item number state
@@ -125,7 +190,7 @@ const decreaseItem=()=>{
                     <i className="fa fa-star"></i>
                 </div>
 
-                <button className="btn-main my-3">
+                <button className="btn-main my-3" onClick={loginToCart}>
                     Add To Cart
                 </button>
 
@@ -142,7 +207,7 @@ const decreaseItem=()=>{
                     -
                   </button>
                 </div>
-                <button className="btn-main my-3" onClick={favouriteHandler}>
+                <button className="btn-main my-3" onClick={loginToFav}>
                 <i className="fa fa-heart" ></i>
                 </button>
          </div>
@@ -163,6 +228,54 @@ const decreaseItem=()=>{
     {/* desc & reviews end */}
 
           <hr />
+
+
+
+
+
+
+
+        {/* logout modal start  */}
+
+        <Modal isOpen={modal}
+                toggle={toggle} centered
+                >
+                <ModalBody className='m-4'>
+                  <h5 className='text-center'>you should log in first</h5>
+                    
+
+                    
+                    <div className='d-flex justify-content-center mt-5'>
+
+
+                     
+
+
+                      <Button onClick={()=>{
+                        toggle();
+                        navigate('/login')
+                      }}>
+                        Go to Login Page
+                      </Button>
+                    </div>
+                </ModalBody>
+
+            </Modal>
+
+    {/* logout modal end  */}
+
+
+
+
+
+            
+
+
+
+
+
+
+
         </div>   
         
         

@@ -2,6 +2,7 @@ import React from 'react' ;
 import { items } from '../../Data';
 
 import ProductItem from '../ProductItem';
+let logo=require('../../images/logo512.png');
 
 export default function MainContent(props) {
     let category=props.category;
@@ -41,7 +42,7 @@ export default function MainContent(props) {
             <div className='maincontent '>
                 
                 <div className="products row justify-content-around">
-                
+                <img src={require('../../images/logo512.png').default} alt="fdf" />
                 {
                 
                 products.map((item)=>

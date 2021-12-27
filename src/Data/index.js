@@ -477,7 +477,7 @@ export const items=[
     availableNumber:14,
     category:'furniture',
     seller:'ikea',
-    image:'../images/furniture/officechair.PNG',
+    image:'https://abdelaziz123456.github.io/shopper-marketplace//images/furniture/officechair.PNG',
    
 },
 

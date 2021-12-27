@@ -41,7 +41,7 @@ export default function MainContent(props) {
             <div className='maincontent '>
                 
                 <div className="products row justify-content-around">
-    
+                
                 {
                 
                 products.map((item)=>

@@ -164,7 +164,7 @@ const decreaseItem=()=>{
 
 
         <div className="img col-12 col-md-6 p-3">
-           <img src={product.image} alt="" className='img-fluid'/>
+           <img src={require('../../images/'+product.image).default } alt="" className='img-fluid'/>
       
         </div>
 

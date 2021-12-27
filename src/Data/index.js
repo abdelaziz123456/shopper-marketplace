@@ -7,7 +7,7 @@ export const items=[
     availableNumber:9,
     category:'shoes',
     seller:'Nike',
-    image:'/images/shoes/blacktrack.png',
+    image:'shoes/blackshoe.png',
    
 },
 {
@@ -17,7 +17,7 @@ export const items=[
     availableNumber:4,
     category:'shoes',
     seller:'Nike',
-    image:'/images/shoes/trackshoe.png',
+    image:'shoes/trackshoe.png',
    
 },
 {
@@ -27,7 +27,7 @@ export const items=[
     availableNumber:5,
     category:'shoes',
     seller:'Silhouette',
-    image:'/images/shoes/trackshoe2.png',
+    image:'shoes/trackshoe2.png',
    
 },
 {
@@ -37,7 +37,7 @@ export const items=[
     availableNumber:8,
     category:'shoes',
     seller:'Gucci',
-    image:'/images/shoes/blackshoe.png',
+    image:'shoes/blackshoe.png',
    
 },
 {
@@ -47,7 +47,7 @@ export const items=[
     availableNumber:14,
     category:'shoes',
     seller:'Gucci',
-    image:'/images/shoes/brownshoe.png',
+    image:'shoes/brownshoe.png',
    
 },
 {
@@ -57,7 +57,7 @@ export const items=[
     availableNumber:12,
     category:'shoes',
     seller:'Nike',
-    image:'/images/shoes/blacktrack.png',
+    image:'shoes/blacktrack.png',
    
 },
 {
@@ -67,7 +67,7 @@ export const items=[
     availableNumber:5,
     category:'clothes',
     seller:'scott',
-    image:'/images/clothes/whitetshirt.png',
+    image:'clothes/whitetshirt.png',
    
 },
 {
@@ -77,7 +77,7 @@ export const items=[
     availableNumber:3,
     category:'clothes',
     seller:'scott',
-    image:'/images/clothes/bluetshirt.png',
+    image:'clothes/bluetshirt.png',
    
 },
 {
@@ -87,7 +87,7 @@ export const items=[
     availableNumber:20,
     category:'clothes',
     seller:'scott',
-    image:'/images/clothes/blacktshirt.png',
+    image:'clothes/blacktshirt.png',
    
 },
 {
@@ -97,7 +97,7 @@ export const items=[
     availableNumber:13,
     category:'clothes',
     seller:'sunny',
-    image:'/images/clothes/jeans.png',
+    image:'clothes/jeans.png',
    
 },
 {
@@ -107,7 +107,7 @@ export const items=[
     availableNumber:4,
     category:'clothes',
     seller:'sunny',
-    image:'/images/clothes/blueshirt.png',
+    image:'clothes/blueshirt.png',
    
 },
 {
@@ -117,7 +117,7 @@ export const items=[
     availableNumber:7,
     category:'clothes',
     seller:'sunny',
-    image:'/images/clothes/squaredshirt.png',
+    image:'clothes/squaredshirt.png',
    
 },
 {
@@ -127,7 +127,7 @@ export const items=[
     availableNumber:4,
     category:'electronics',
     seller:'MSI',
-    image:'/images/electronics/gamingcomputer.png',
+    image:'electronics/gamingcomputer.png',
    
 },
 {
@@ -137,7 +137,7 @@ export const items=[
     availableNumber:6,
     category:'electronics',
     seller:'Apple',
-    image:'/images/electronics/applecomputer.png',
+    image:'electronics/applecomputer.png',
    
 },
 {
@@ -147,7 +147,7 @@ export const items=[
     availableNumber:11,
     category:'electronics',
     seller:'samsung',
-    image:'/images/electronics/samsungmobile.png',
+    image:'electronics/samsungmobile.png',
    
 }, 
 {
@@ -157,7 +157,7 @@ export const items=[
     availableNumber:15,
     category:'electronics',
     seller:'apple',
-    image:'/images/electronics/iphone.png',
+    image:'electronics/iphone.png',
    
 },
 {
@@ -167,7 +167,7 @@ export const items=[
     availableNumber:12,
     category:'electronics',
     seller:'apple',
-    image:'/images/electronics/applelaptop.png',
+    image:'electronics/applelaptop.png',
    
 },
 {
@@ -177,7 +177,7 @@ export const items=[
     availableNumber:3,
     category:'electronics',
     seller:'logitec',
-    image:'/images/electronics/headphone.png',
+    image:'electronics/headphone.png',
    
 },
 {
@@ -187,7 +187,7 @@ export const items=[
     availableNumber:22,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/brownsofa.png',
+    image:'furniture/brownsofa.png',
    
 },
 {
@@ -197,7 +197,7 @@ export const items=[
     availableNumber:14,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/redsofa.png',
+    image:'furniture/redsofa.png',
    
 },
 {
@@ -207,7 +207,7 @@ export const items=[
     availableNumber:4,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/metaltable.png',
+    image:'furniture/metaltable.png',
    
 },
 {
@@ -217,7 +217,7 @@ export const items=[
     availableNumber:9,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/woodentable.png',
+    image:'furniture/woodentable.png',
    
 },
 {
@@ -227,7 +227,7 @@ export const items=[
     availableNumber:10,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/armchair.png',
+    image:'furniture/armchair.png',
    
 },
 {
@@ -237,7 +237,7 @@ export const items=[
     availableNumber:11,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/officechair.png',
+    image:'furniture/officechair.png',
    
 },
 {
@@ -247,7 +247,7 @@ export const items=[
     availableNumber:12,
     category:'shoes',
     seller:'Nike',
-    image:'/images/shoes/dockshoe.png',
+    image:'shoes/dockshoe.png',
    
 },
 {
@@ -257,7 +257,7 @@ export const items=[
     availableNumber:4,
     category:'shoes',
     seller:'Nike',
-    image:'/images/shoes/adidasshoe.png',
+    image:'shoes/adidasshoe.png',
    
 },
 {
@@ -267,7 +267,7 @@ export const items=[
     availableNumber:5,
     category:'shoes',
     seller:'Silhouette',
-    image:'/images/shoes/trackshoe2.png',
+    image:'shoes/trackshoe2.png',
    
 },
 {
@@ -277,7 +277,7 @@ export const items=[
     availableNumber:6,
     category:'shoes',
     seller:'Gucci',
-    image:'/images/shoes/blackshoe.png',
+    image:'shoes/blackshoe.png',
    
 },
 {
@@ -287,7 +287,7 @@ export const items=[
     availableNumber:7,
     category:'shoes',
     seller:'Gucci',
-    image:'/images/shoes/brownshoe.png',
+    image:'shoes/brownshoe.png',
    
 },
 {
@@ -297,7 +297,7 @@ export const items=[
     availableNumber:8,
     category:'shoes',
     seller:'Nike',
-    image:'/images/shoes/blacktrack.png',
+    image:'shoes/blacktrack.png',
    
 },
 {
@@ -307,7 +307,7 @@ export const items=[
     availableNumber:9,
     category:'clothes',
     seller:'scott',
-    image:'/images/clothes/whitetshirt.png',
+    image:'clothes/whitetshirt.png',
    
 },
 {
@@ -317,7 +317,7 @@ export const items=[
     availableNumber:10,
     category:'clothes',
     seller:'scott',
-    image:'/images/clothes/bluetshirt.png',
+    image:'clothes/bluetshirt.png',
    
 },
 {
@@ -327,7 +327,7 @@ export const items=[
     availableNumber:11,
     category:'clothes',
     seller:'scott',
-    image:'/images/clothes/blacktshirt.png',
+    image:'clothes/blacktshirt.png',
    
 },
 {
@@ -337,7 +337,7 @@ export const items=[
     availableNumber:12,
     category:'clothes',
     seller:'sunny',
-    image:'/images/clothes/jeans.png',
+    image:'clothes/jeans.png',
    
 },
 {
@@ -347,7 +347,7 @@ export const items=[
     availableNumber:13,
     category:'clothes',
     seller:'sunny',
-    image:'/images/clothes/blueshirt.png',
+    image:'clothes/blueshirt.png',
    
 },
 {
@@ -357,7 +357,7 @@ export const items=[
     availableNumber:14,
     category:'clothes',
     seller:'sunny',
-    image:'/images/clothes/squaredshirt.png',
+    image:'clothes/squaredshirt.png',
    
 },
 {
@@ -367,7 +367,7 @@ export const items=[
     availableNumber:15,
     category:'electronics',
     seller:'MSI',
-    image:'/images/electronics/gamingcomputer.png',
+    image:'electronics/gamingcomputer.png',
    
 },
 {
@@ -377,7 +377,7 @@ export const items=[
     availableNumber:16,
     category:'electronics',
     seller:'Apple',
-    image:'/images/electronics/applecomputer.png',
+    image:'electronics/applecomputer.png',
    
 },
 {
@@ -387,7 +387,7 @@ export const items=[
     availableNumber:4,
     category:'electronics',
     seller:'samsung',
-    image:'/images/electronics/samsungmobile.png',
+    image:'electronics/samsungmobile.png',
    
 }, 
 {
@@ -397,7 +397,7 @@ export const items=[
     availableNumber:6,
     category:'electronics',
     seller:'apple',
-    image:'/images/electronics/iphone.png',
+    image:'electronics/iphone.png',
    
 },
 {
@@ -407,7 +407,7 @@ export const items=[
     availableNumber:7,
     category:'electronics',
     seller:'apple',
-    image:'/images/electronics/applelaptop.png',
+    image:'electronics/applelaptop.png',
    
 },
 {
@@ -417,7 +417,7 @@ export const items=[
     availableNumber:8,
     category:'electronics',
     seller:'logitec',
-    image:'/images/electronics/headphone.png',
+    image:'electronics/headphone.png',
    
 },
 {
@@ -427,7 +427,7 @@ export const items=[
     availableNumber:9,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/brownsofa.png',
+    image:'furniture/brownsofa.png',
    
 },
 {
@@ -437,7 +437,7 @@ export const items=[
     availableNumber:10,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/redsofa.png',
+    image:'furniture/redsofa.png',
    
 },
 {
@@ -447,7 +447,7 @@ export const items=[
     availableNumber:11,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/metaltable.png',
+    image:'furniture/metaltable.png',
    
 },
 {
@@ -457,7 +457,7 @@ export const items=[
     availableNumber:12,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/woodentable.png',
+    image:'furniture/woodentable.png',
    
 },
 {
@@ -467,7 +467,7 @@ export const items=[
     availableNumber:13,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/armchair.PNG',
+    image:'furniture/armchair.png',
    
 },
 {
@@ -477,7 +477,7 @@ export const items=[
     availableNumber:14,
     category:'furniture',
     seller:'ikea',
-    image:'https://abdelaziz123456.github.io/shopper-marketplace/images/furniture/officechair.PNG',
+    image:'furniture/officechair.png',
    
 },
 

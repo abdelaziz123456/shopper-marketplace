@@ -21,7 +21,7 @@ export default function ProductItem(props) {
             <div className='image w-100 d-flex justify-content-center'>
 
 
-                <img src={props.image} className='img-fluid'  alt="" width='200' height='200' />
+                <img src={require('../../images/'+props.image).default } className='img-fluid'  alt="" width='200' height='200' />
 
             </div>
 

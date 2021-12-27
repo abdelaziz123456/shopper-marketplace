@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/shopper-marketplace/static/css/main.e6a075a3.chunk.css",
-    "main.js": "/shopper-marketplace/static/js/main.35f6143c.chunk.js",
-    "main.js.map": "/shopper-marketplace/static/js/main.35f6143c.chunk.js.map",
+    "main.js": "/shopper-marketplace/static/js/main.8187d544.chunk.js",
+    "main.js.map": "/shopper-marketplace/static/js/main.8187d544.chunk.js.map",
     "runtime-main.js": "/shopper-marketplace/static/js/runtime-main.9a789d77.js",
     "runtime-main.js.map": "/shopper-marketplace/static/js/runtime-main.9a789d77.js.map",
     "static/css/2.e4eb85c5.chunk.css": "/shopper-marketplace/static/css/2.e4eb85c5.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.e4eb85c5.chunk.css",
     "static/js/2.923f94bd.chunk.js",
     "static/css/main.e6a075a3.chunk.css",
-    "static/js/main.35f6143c.chunk.js"
+    "static/js/main.8187d544.chunk.js"
   ]
 }

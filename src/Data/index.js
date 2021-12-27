@@ -467,7 +467,7 @@ export const items=[
     availableNumber:13,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/armchair.png',
+    image:'/images/furniture/armchair.PNG',
    
 },
 {
@@ -477,7 +477,7 @@ export const items=[
     availableNumber:14,
     category:'furniture',
     seller:'ikea',
-    image:'/images/furniture/officechair.png',
+    image:'../images/furniture/officechair.PNG',
    
 },
 
